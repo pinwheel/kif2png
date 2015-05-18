@@ -6,16 +6,17 @@ require 'optparse'
 # kif file to png file.
 #
 class Kif2png
-  def initialize
+  def initialize(source, dest, tume=false)
     @params = {}
-    banner = 'Usage: kif2png [options] SOURCE.kif DEST.png'
-    OptionParser.new(banner) do |opt|
-      opt.on('-t', '--tume', 'Display for tumeshogi') { |v| @params[:t] = v }
-      opt.permute!(ARGV)
-    end
-    @params[:dest] = ARGV.pop
-    @params[:source] = ARGV.pop
-    fail ArgumentError, banner unless @params[:dest] && @params[:source]
+    #banner = 'Usage: kif2png [options] SOURCE.kif DEST.png'
+    #OptionParser.new(banner) do |opt|
+    #  opt.on('-t', '--tume', 'Display for tumeshogi') { |v| @params[:t] = v }
+    #  opt.permute!(ARGV)
+    #end
+    @params[:source] = source 
+    @params[:dest] = dest 
+    @params[:t] = tume 
+    #fail ArgumentError, banner unless @params[:dest] && @params[:source]
   end
 
   def run
@@ -54,4 +55,4 @@ class Kif2png
   end
 end
 
-Kif2png.new.run
+Kif2png.new($1, $2).run if __FILE__ == $0
