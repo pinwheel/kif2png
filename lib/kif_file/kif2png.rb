@@ -38,7 +38,7 @@ class Kif2png
           write_dan(board, line.split('|')[1])
         elsif line.start_with?('先手の持駒')
           board.write_hand(line.split('：')[1], false)
-        elsif line.start_with?('後手の持駒') && @params[:t]
+        elsif line.start_with?('後手の持駒') && !@params[:t]
           board.write_hand(line.split('：')[1], true)
         end
       end
