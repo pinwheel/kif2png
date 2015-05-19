@@ -20,8 +20,10 @@ Or install it yourself as:
 
 ## Usage
 
+```ruby
 tumeShogiMode = true
 KifFile.write_to_png(@source, @dest, tumeShogiMode)
+```
 
 ## Development
 
