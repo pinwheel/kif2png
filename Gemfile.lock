@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     kif_file (0.1.0)
+      cairo
 
 GEM
   remote: https://rubygems.org/
@@ -30,7 +31,6 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 1.9)
-  cairo
   kif_file!
   rake (~> 10.0)
   rspec
