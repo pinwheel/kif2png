@@ -21,6 +21,10 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
+# 柿木kiffile path
+@source = File.join(@dir, 'sample.kif')
+# outputpng path
+@dest = File.join(@dir, 'sample.png')
 tumeShogiMode = true
 KifFile.write_to_png(@source, @dest, tumeShogiMode)
 ```
