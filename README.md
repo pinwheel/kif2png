@@ -1,4 +1,4 @@
-# KifFile
+# Kif2png
 
 Convert kakinoki kifFile to png format file.
 
@@ -42,7 +42,7 @@ Convert kakinoki kifFile to png format file.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'kif_file', :git => 'https://github.com/pinwheel/kif_file.git'
+gem 'kif2png', :git => 'https://github.com/pinwheel/kif2png.git'
 ```
 
 And then execute:
@@ -51,7 +51,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install kif_file
+    $ gem install kif2png
 
 ## Usage
 
