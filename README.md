@@ -34,8 +34,8 @@ Convert kakinoki kifFile to png format file.
 
 ### sample output (normal, tume)
 
-<img src="https://raw.githubusercontent.com/wiki/pinwheel/kif_file/images/bod.png" title="NormalMode" width="200" height="200" />
-<img src="https://raw.githubusercontent.com/wiki/pinwheel/kif_file/images/tume.png" title="TumeShogiMode" width="200" height="200" />
+<img src="https://raw.githubusercontent.com/wiki/pinwheel/kif2png/images/bod.png" title="NormalMode" width="200" height="200" />
+<img src="https://raw.githubusercontent.com/wiki/pinwheel/kif2png/images/tume.png" title="TumeShogiMode" width="200" height="200" />
 
 ## Installation
 

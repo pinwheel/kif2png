@@ -1,17 +1,17 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'kif_file/version'
+require 'kif2png/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "kif_file"
+  spec.name          = "kif2png"
   spec.version       = KifFile::VERSION
   spec.authors       = ["pinwheel"]
   spec.email         = ["wheel.ric@gmail.com\n"]
 
   spec.summary       = %q{Convert kakinoki kif to png.}
   spec.description   = %q{Convert kakinoki kif to png.}
-  spec.homepage      = "https://github.com/pinwheel/kif_file.git"
+  spec.homepage      = "https://github.com/pinwheel/kif2png.git"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.

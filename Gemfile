@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in kif_file.gemspec
+# Specify your gem's dependencies in kif2png.gemspec
 gemspec
