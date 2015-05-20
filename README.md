@@ -1,6 +1,6 @@
 # Kif2png
 
-Convert kakinoki kifFile to png format file.
+Convert kakinoki kiffile to png format file.
 
 ### sample input
 
@@ -61,5 +61,5 @@ Or install it yourself as:
 # outputpng path
 @dest = File.join(@dir, 'sample.png')
 tumeShogiMode = true
-KifFile.write_to_png(@source, @dest, tumeShogiMode)
+Kif2png.write_to_png(@source, @dest, tumeShogiMode)
 ```

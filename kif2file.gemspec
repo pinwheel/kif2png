@@ -5,7 +5,7 @@ require 'kif2png/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "kif2png"
-  spec.version       = KifFile::VERSION
+  spec.version       = Kif2png::VERSION
   spec.authors       = ["pinwheel"]
   spec.email         = ["wheel.ric@gmail.com\n"]
 

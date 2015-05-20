@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe KifFile do
+describe Kif2png do
   before(:all) do
     @dir = File.expand_path('../../sample', __FILE__)
     @source = File.join(@dir, 'sample.kif')
@@ -44,17 +44,17 @@ EOS
   end
 
   it 'has a version number' do
-    expect(KifFile::VERSION).not_to be nil
+    expect(Kif2png::VERSION).not_to be nil
   end
 
   it 'output tume kif' do
-    KifFile.write_to_png(@source, @dest, true)
+    Kif2png.write_to_png(@source, @dest, true)
     FileUtils.cp(@dest, File.join(@dir, 'tume.png'))
     expect(File.exist?(@dest)).to eq(true)
   end
 
   it 'output bod kif' do
-    KifFile.write_to_png(@source, @dest, false)
+    Kif2png.write_to_png(@source, @dest, false)
     FileUtils.cp(@dest, File.join(@dir, 'bod.png'))
     expect(File.exist?(@dest)).to eq(true)
   end
